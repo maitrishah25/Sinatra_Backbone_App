@@ -1,0 +1,41 @@
+body {
+  padding: 0;
+  margin: 0;
+  /*font-family: 'Yanone Kaffeesatz', sans-serif;*/
+}
+
+#container {
+  background-image: url('images/EDM_VISUALS_2.jpg');
+  background-repeat: no-repeat;
+  height: 600px;
+  background-size: 100%;
+  margin: 0;
+}
+
+h2 {
+  font-family: 'Questrial', sans-serif;
+  letter-spacing: 1px;
+}
+
+.equalizer {
+  /*margin-top: 10px;*/
+}
+
+#form {
+  background-color: rgba(108, 30, 255, 0.78);
+  position: absolute;
+  top: 20%;
+  color: white;
+  padding: 50px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#list h6 {
+  background-color: yellow;
+  /*background-color: palegoldenrod;*/
+  /*letter-spacing: 1px;*/
+  text-align: center;
+  /*padding: 7px 0;*/
+  /*margin-bottom: 15px;*/
+}

@@ -1,0 +1,20 @@
+<div id="container">
+  <div id="form" class="six columns offset-by-three">
+  <h2>Sign Up <img class="equalizer" src="../css/images/equalizer.gif" alt="equalizer" style="height:50px; width:50px" /></h2>
+    <form name="signup" class="create-person" action="/people" method="post">
+      <input type="text" class="ten columns offset-by-one" name="person[name]" placeholder="Name"><br>
+      <input type="text" class="ten columns offset-by-one" name="person[email]" id="email" placeholder="Email"><br>
+      <button type="submit" class="button button-primary ten columns offset-by-one">Add Me <i class="fa fa-forward"></i></button>
+      <!-- <input type="submit" value="Add Me" class="button button-primary"> -->
+      <!-- <i class="fa fa-forward" style="color:yellow"></i> -->
+    </form>
+  </div>
+
+
+</div>
+
+<div id="list">
+  <h6><strong>Thanks for signing up. Check your inbox for updates.</strong></h6>
+  <ul id="people-list">
+  </ul>
+</div>
