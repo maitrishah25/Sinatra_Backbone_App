@@ -9,7 +9,7 @@ ActiveRecord::Base.establish_connection({
   :adapter => db.scheme == 'postgres' ? 'postgresql' : db.scheme,
   :host => db.host,
   :password => db.password,
-  :username => db.username,
+  :username => db.user,
   :database => db.path[1..-1]
 })
 
@@ -19,6 +19,13 @@ require './models/person'
 def person_params
   @request_body ||= JSON.parse(request.body.read.to_s)
   @request_body['person'] || @request_body
+end
+
+get '/' do
+  people = Person.all
+  # content_type :json
+  # people.to_json
+  erb :index
 end
 
 get '/people' do
