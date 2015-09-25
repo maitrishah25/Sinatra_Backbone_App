@@ -9,7 +9,10 @@
     <title>Sinatra App</title>
 
     <script type="text/template" id="person-template">
-      <strong class="one column offset-by-five"><%%= name %> </strong> <span class="three columns"> <%%= email %></span>
+      <div class="listing row">
+        <span class="one column offset-by-five"><strong><%%= name %> </strong></span>
+        <span class="two columns"><%%= email %></span>
+      </div>
     </script>
   </head>
   <body>

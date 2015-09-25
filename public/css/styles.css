@@ -2,6 +2,12 @@ body {
   padding: 0;
   margin: 0;
   /*font-family: 'Yanone Kaffeesatz', sans-serif;*/
+  background: linear-gradient(270deg, #00ffb9, #00b6ec, #681cf8);
+  background-size: 600% 600%;
+
+  -webkit-animation: MoveBG 30s ease infinite;
+  -moz-animation: MoveBG 30s ease infinite;
+  animation: MoveBG 30s ease infinite;
 }
 
 #container {
@@ -38,4 +44,33 @@ h2 {
   text-align: center;
   /*padding: 7px 0;*/
   /*margin-bottom: 15px;*/
+}
+
+/*#people-list {
+  background-color: gainsboro;
+  width: 25%;
+  align-self: center;
+  padding: 5px 10px;
+  position: fixed;
+  left: 37.5%;
+}*/
+
+.listing:nth-child(even) {
+  background-color: lightgray;
+}
+
+@-webkit-keyframes MoveBG {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes MoveBG {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes MoveBG {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }
