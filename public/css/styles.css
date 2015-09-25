@@ -19,8 +19,10 @@ body {
 }
 
 h2 {
-  font-family: 'Questrial', sans-serif;
+  font-family: 'Audiowide', cursive;
+  /*font-family: 'Questrial', sans-serif;*/
   letter-spacing: 1px;
+  color: yellow;
 }
 
 .equalizer {
