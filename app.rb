@@ -2,10 +2,14 @@ require 'bundler'
 Bundler.require()
 
 # connection
+
+db = URI.parse(ENV['DATABASE_URL'] || 'postgres:///people_db')
+
 ActiveRecord::Base.establish_connection({
-  :adapter => 'postgresql',
-  :database => 'people_db'
-  })
+  :adapter => db.scheme == 'postgres' ? 'postgresql' : db.scheme,
+  :host => db.host,
+  :database => db.path[1..-1]
+})
 
 # models
 require './models/person'
